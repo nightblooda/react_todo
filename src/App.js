@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
 import Header from './components/layout/Header';
+// import uuid from 'uuid';
 import './App.css';
 
 class App extends Component {
@@ -34,12 +36,23 @@ class App extends Component {
   delTodo = (id) => {
     this.setState({todos: [...this.state.todos.filter(todo => todo.id !== id)]});
   }
+  addTodo = (title) => {
+    const newTodo = {
+      id: 4,
+      title,
+      completed: false
+    }
+    this.setState({todos: [...this.state.todos, newTodo]});
+  }
   render(){
 
     return (
       <div className="App">
-      <Header />
-      <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+        <div className="container">
+          <Header />
+          <AddTodo addTodo={this.addTodo}/>
+          <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+        </div>
       </div>
     );
   }
