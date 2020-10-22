@@ -8,7 +8,8 @@ Used react-router for routing to different pages and axios for api requests.
 ### Application demo
 
 Some screen-shots to show how application looks:
-![alt text](https://github.com/nightblooda/react_todo/blob/master/demo1.png?raw=true)
+![alt text](https://github.com/nightblooda/react_todo/master/public/demo1.png?raw=true)
+![alt text](https://github.com/nightblooda/react_todo/master/public/demo2.png?raw=true)
 
 ### How to run application
 
