@@ -10,4 +10,4 @@ Some screen-shots to show how application looks:
 ### How to run application
 
 1. Clone the repository
-2. Run the server with ### `npm start`
+2. Run the server with  `npm start`
